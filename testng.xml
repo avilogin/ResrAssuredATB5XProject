@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="D:/Documents for Study/Automation class/JavaPrograms/RestAssuredATB5X">
+        <classes>
+            <class name="org.example.CRUD.GET.GetAllBookingsNonBDDTestNG">
+                <methods>
+                    <include name="testGetbookingpositive"/>
+                </methods>
+            </class>
+            <class name="org.example.CRUD.GET.GetReqNonBDDTestNG">
+                <methods>
+                    <include name="testGetbookingpositive"/>
+                </methods>
+            </class>
+            <class name="org.example.CRUD.GET.TestNGGet1">
+                <methods>
+                    <include name="positivebooking"/>
+                    <include name="negativebooking"/>
+                    <include name="negativebooking2"/>
+                </methods>
+            </class>
+            <class name="org.example.CRUD.POST.CreateTokenBDD">
+                <methods>
+                    <include name="CreateToken"/>
+                </methods>
+            </class>
+            <class name="org.example.CRUD.POST.CreateTokenNonBDD">
+                <methods>
+                    <include name="CreateTokNonBDD"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
