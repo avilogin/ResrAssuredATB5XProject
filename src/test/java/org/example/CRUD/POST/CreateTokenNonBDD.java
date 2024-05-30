@@ -23,11 +23,11 @@ public class CreateTokenNonBDD {
                 r.baseUri("https://restful-booker.herokuapp.com");
                 r.basePath("/auth");
                 r.header("ContentType","application/json");
-                r.body(payload);
+                r.body(payload).log().all();
 
                 res = r.when().post();//Response interface have many methods that we can use
 
-                ValRes = res.then();//ValidatableResponse interface have many methods that we can use
+                ValRes = res.then().log().all();//ValidatableResponse interface have many methods that we can use
                 String responsestring = res.toString();
                 System.out.println(responsestring);
                 ValRes.statusCode(200);
