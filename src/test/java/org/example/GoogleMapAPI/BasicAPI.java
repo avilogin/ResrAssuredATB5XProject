@@ -3,6 +3,7 @@ package org.example.GoogleMapAPI;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import org.example.Files.payloads;
+import org.testng.Assert;
 
 import java.util.jar.JarEntry;
 
@@ -46,6 +47,7 @@ public class BasicAPI {
 
         JsonPath js2 = new JsonPath(getResponse);
         String address = js2.getString("address");
+        Assert.assertEquals(address,newAdd);
         System.out.println(address);
 
     }
