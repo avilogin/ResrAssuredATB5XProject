@@ -20,6 +20,7 @@ public class CreateTokenNonBDD {
                 "    \"password\" : \"password123\"\n" +
                 "}";
 
+
                 r.baseUri("https://restful-booker.herokuapp.com");
                 r.basePath("/auth");
                 r.header("ContentType","application/json");

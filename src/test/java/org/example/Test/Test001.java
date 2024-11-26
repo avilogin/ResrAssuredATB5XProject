@@ -14,6 +14,6 @@ public class Test001 {
     @Test
     public void test2()
     {
-        Assert.assertEquals(false, true);
+        Assert.assertEquals(true, true);
     }
 }

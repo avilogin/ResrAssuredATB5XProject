@@ -6,14 +6,14 @@ import org.testng.annotations.Test;
 
 public class GetReqNonBDDTestNG {
 
-    @Test(enabled = false)
+    @Test
     public void testGetbookingpositive()
     {
 
         RequestSpecification r = new RestAssured().given();
 
         r.baseUri("https://restful-booker.herokuapp.com")
-                .basePath("/booking/900")
+                .basePath("/booking/2846")
                 .when().log().all().get()
                 .then().log().all();
     }

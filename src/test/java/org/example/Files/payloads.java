@@ -5,6 +5,28 @@ import org.example.GoogleMapAPI.BasicAPI;
 public class payloads
 {
 
+    public static String token()
+    {
+        return "Basic YXZpamVldGo4NUBnbWFpbC5jb206QVRBVFQzeEZmR0YwTHAzWnh1cFhCXzlGWXJvUWtpektnWU5LdndFV0thVDB5M2RvNHlEc1lNcWd4OXdwV2sxX0ZnSm4zbXl5cGgwQVA3MVpuN3oyQUJhWnZQczZFVjhtcl9VUnlBRWRCYVZFendPUkRjS3FTNTcxUXVpenJueFBkWTItaDFCanROZjExOXpZSUZJRXRpR3V3UEo4aklMRzVOeWlyd3VVQWlEa0tfUVgzYVQ0NGpFPUY2MjFENTJC";
+    }
+
+    public static String issue()
+    {
+        return "{\n" +
+                "    \"fields\": {\n" +
+                "       \"project\":\n" +
+                "       {\n" +
+                "          \"key\": \"SCRUM\"\n" +
+                "       },\n" +
+                "       \"summary\": \"Creating Demo issue with Attachments\",\n" +
+                "       \n" +
+                "       \"issuetype\": {\n" +
+                "          \"name\": \"Bug\"\n" +
+                "       }\n" +
+                "   }\n" +
+                "}";
+    }
+
 
     public static String AddPlace()
     {

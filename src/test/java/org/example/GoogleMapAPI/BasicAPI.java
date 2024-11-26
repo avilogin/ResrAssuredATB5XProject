@@ -16,6 +16,7 @@ public class BasicAPI {
     public static void main(String[] args)
     {
 
+        //Post API
         RestAssured.baseURI = "https://rahulshettyacademy.com";
         String newAdd = "11, side layout, cohen 101";
         String postResponse = given().log().all().queryParam("key","qaclick123").header("Content-Type","application/json")
